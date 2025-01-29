@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Chatbot</title>
+</head>
+<body>
+<div class="container">
+    <div class="chatbox">
+        <div class="chatbox__support">
+            <div class="chatbox__header">
+                <div class="chatbox__image--header">
+                    <img src="https://img.icons8.com/color/48/000000/circled-user-female-skin-type-5--v1.png" alt="image">
+                </div>
+                <div class="chatbox__content--header">
+                    <h4 class="chatbox__heading--header">Chat support</h4>
+                    <p class="chatbox__description--header">Hi. My name is Sam. How can I help you?</p>
+                </div>
+            </div>
+            <div class="chatbox__messages">
+                <div></div>
+            </div>
+            <div class="chatbox__footer">
+                <input type="text" placeholder="Write a message...">
+                <button class="chatbox__send--footer send__button">Send</button>
+            </div>
+        </div>
+        <div class="chatbox__button">
+            <button><img src="{{ url_for('static', filename='chat.jpeg') }}" height="50" width="50" /></button>
+        </div>
+    </div>
+</div>
+
+    <script>
+        $SCRIPT_ROOT = {{ request.script_root|tojson }};
+    </script>
+    <script type="text/javascript" src="{{ url_for('static', filename='app.js') }}"></script>
+
+    <!-- Navbar Section Starts Here -->
+    <section class="navbar">
+        <div class="container">
+            <div class="logo">
+                <a href="#" title="Logo">
+                    <img src="images/logo.png" alt="Restaurant Logo" class="img-responsive">
+                </a>
+            </div>
+
+            <div class="menu text-right">
+                <ul>
+                    <li>
+                        <a href="base.html">Home</a>
+                    </li>
+                    <li>
+                        <a href="{{ url_for('static', filename='foods.html') }}">Menu</a>
+                    </li>
+                    <li>
+                        <a href="{{ url_for('static', filename='contact.html') }}">Contact</a>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="clearfix"></div>
+        </div>
+    </section>
+    <!-- Navbar Section Ends Here -->
+    <section class="heading">
+    <center>
+    <div class="text text-1">Digital</div><div class="text text-2">Diner</div>
+    </section>
+
+    <section class="abproject">
+        <p>Since our opening, we have become masters of our craft. our commitment to quality items, exceptional services and incomparable customer care keep our community coming back again and again</p>
+    </section>
+    <section class="Timings">
+        <h2>Timings</h2>
+        <center><p>Monday : 9:00 A.M - 9:00 P.M </p><br/>
+        <p> Tuesday : 9:00 A.M - 9:00 P.M</p><br/>
+        <p> Wednesday : 9:00 A.M - 10:00 P.M</p><br/>
+        <p> Thursday : 9:00 A.M - 9:00 P.M</p><br/>
+        <p> Friday : 9:00 A.M - 10:00 P.M</p><br/>
+        <p> Saturday : 10:00 A.M - 10:00 P.M</p><br/>
+        <p> Sunday : 10:00 A.M - 11:00 P.M</p></center>
+    </section>
+    <section class="map">
+     <center><iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3783.83829427275!2d73.80716807506153!3d18.49098248259689!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bc2bfdad7143a4f%3A0xabd31c8f9e6eca9a!2sMarathwada%20Mitra%20Mandal&#39;s%20College%20of%20Engineering!5e0!3m2!1sen!2sin!4v1684343610313!5m2!1sen!2sin" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe></center>
+ </section>
+
+    <hr>
+    <!-- social Section Starts Here -->
+    <section class="social">
+        <div class="container text-center">
+            <ul>
+                <li>
+                    <a href="#"><img src="https://img.icons8.com/fluent/50/000000/facebook-new.png"/></a>
+                </li>
+                <li>
+                    <a href="#"><img src="https://img.icons8.com/fluent/48/000000/instagram-new.png"/></a>
+                </li>
+                <li>
+                    <a href="#"><img src="https://img.icons8.com/fluent/48/000000/twitter.png"/></a>
+                </li>
+            </ul>
+        </div>
+    </section>
+    <!-- social Section Ends Here -->
+    <!-- footer Section Starts Here -->
+    <section class="footer">
+        <div class="container text-center">
+            <p style="color: white">copyright &copy 2023. All rights reserved by <a href="#">MMCOE</a></p>
+        </div>
+    </section>
+    <!-- footer Section Ends Here -->
+
+</body>
+</html>
